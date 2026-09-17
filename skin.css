@@ -1,0 +1,105 @@
+/* =========================================================
+   VXNISH — DualSense Custom Theme
+   Noir / Violet Néon
+   ========================================================= */
+
+/* Corps de la manette */
+.edit .controller,
+.edit .gamepad {
+    filter:
+        drop-shadow(0 0 4px rgba(145, 45, 255, 0.45))
+        drop-shadow(0 0 14px rgba(145, 45, 255, 0.25));
+}
+
+/* Glow violet général */
+.edit .button,
+.edit .stick,
+.edit .dpad,
+.edit .trigger {
+    transition:
+        filter 0.08s ease,
+        background-color 0.08s ease,
+        box-shadow 0.08s ease,
+        transform 0.08s ease;
+}
+
+/* Boutons */
+.edit .button {
+    background-color: #09090d !important;
+    border-color: #8a2be2 !important;
+    box-shadow:
+        0 0 3px #8a2be2,
+        inset 0 0 5px rgba(138, 43, 226, 0.35);
+}
+
+/* Bouton pressé */
+.edit .button.pressed {
+    background-color: #8a2be2 !important;
+    border-color: #c77dff !important;
+    box-shadow:
+        0 0 6px #8a2be2,
+        0 0 16px #8a2be2,
+        0 0 30px rgba(138, 43, 226, 0.75);
+    filter: brightness(1.35);
+}
+
+/* Croix directionnelle */
+.edit .dpad {
+    filter:
+        drop-shadow(0 0 3px #8a2be2)
+        drop-shadow(0 0 8px rgba(138, 43, 226, 0.6));
+}
+
+.edit .dpad.pressed {
+    filter:
+        drop-shadow(0 0 6px #b84cff)
+        drop-shadow(0 0 18px #8a2be2);
+}
+
+/* Sticks */
+.edit .stick {
+    box-shadow:
+        0 0 4px #8a2be2,
+        inset 0 0 8px rgba(138, 43, 226, 0.5);
+}
+
+/* Stick quand utilisé */
+.edit .stick.pressed {
+    box-shadow:
+        0 0 8px #8a2be2,
+        0 0 20px #8a2be2,
+        inset 0 0 12px #c77dff;
+}
+
+/* Gâchettes */
+.edit .trigger {
+    box-shadow:
+        0 0 4px rgba(138, 43, 226, 0.7);
+}
+
+.edit .trigger.pressed {
+    background-color: #8a2be2 !important;
+    box-shadow:
+        0 0 8px #8a2be2,
+        0 0 22px #8a2be2;
+}
+
+/* Touchpad */
+.edit .touchpad {
+    box-shadow:
+        0 0 5px rgba(138, 43, 226, 0.5),
+        inset 0 0 12px rgba(138, 43, 226, 0.12);
+}
+
+/* PS Button */
+.edit .ps {
+    box-shadow:
+        0 0 5px #8a2be2,
+        0 0 15px rgba(138, 43, 226, 0.7);
+}
+
+/* Suppression du fond */
+html,
+body {
+    background: transparent !important;
+}
